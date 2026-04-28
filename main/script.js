@@ -9,21 +9,21 @@
     // Catálogo de productos con categorías (HTML puro, no JS)
     const catalogo = [
         { id:1, nombre:'Comedor Completo', categoria:'comedor', precio:18000, desc:'Comedor Talita, mesa de madera y 4 sillas color negro chocolate.', img:'images/comedor_1.jpg' },
-        { id:2, nombre:'Comedor Jurídico', categoria:'comedor', precio:72000, desc:'Comedor Jurídico de Cedro con 14 sillas estilo Beatriz.', img:'/images/comedor_2.jpg' },
-        { id:3, nombre:'Desayunador', categoria:'cocina', precio:9500, desc:'Mesa desayunador Roy barra alta de cocina antecomedor 100% Nogal.', img:'/images/cocina_1.jpg' },
-        { id:4, nombre:'Sala Hueso', categoria:'sala', precio:12000, desc:'Sala Devayne con acabados en madera, barnizado en color hueso.', img:'/images/sala_1.jpg' },
-        { id:5, nombre:'Mesedora Clásica', categoria:'exterior', precio:9550, desc:'Mecedora vintage de Roble solido Mission Arts.', img:'/images/exterior_1.jpg' },
-        { id:6, nombre:'Sala Providencial', categoria:'sala', precio:100000, desc:'Sala con mesa de centro Piamonte tallado a mano en Cedro Rojo.', img:'/images/sala_2.jpg' },
-        { id:7, nombre:'Sala Amapola', categoria:'sala', precio:20000, desc:'Sala Clásica de Caoba con respaldo abotonado.', img:'/images/sala_3.jpg' },
-        { id:8, nombre:'Tocador', categoria:'dormitorio', precio:7400, desc:'Tocador de madera de Roble con espejo estilo Frances.', img:'/images/dormitorio_1.jpg' },
-        { id:9, nombre:'Chaise Pino', categoria:'dormitorio', precio:7500, desc:'Chaise longue grande tela de terciopelo, con madera de Pino.', img:'/images/dormitorio_2.jpg' },
-        { id:10, nombre:'Cabecera King', categoria:'dormitorio', precio:12000, desc:'Cabecera de Parota con barniz oscuro para cama King Zise.', img:'/images/dormitorio_3.jpg' },
-        { id:11, nombre:'Mesa 6', categoria:'comedor', precio:40000, desc:'Mesa de Roble macizo para 6 personas, con braniz Caoba.', img:'/images/comedor_3.jpg' },
-        { id:12, nombre:'Recibidor', categoria:'sala', precio:2500, desc:'Mesa recibidor estio House Clásica madera Caoba Oscuro.', img:'/images/sala_4.jpg' },
-        { id:13, nombre:'Consoleta', categoria:'dormitorio', precio:3500, desc:'Cosoleta semicircular de Pino estilo Norcastle.', img:'/images/dormitorio_4.jpg' },
-        { id:14, nombre:'Mesa Redonda', categoria:'comedor', precio:20000, desc:'Mesa redonda de Parota con 4 sillas ergonómicas curvas.', img:'/images/comedor_4.jpg' },
-        { id:15, nombre:'Cabecera Matrimonial', categoria:'dormitorio', precio:8000, desc:'Cabecera matrimonial estilo Texas, elaborada 100% en Nogal.', img:'/images/dormitorio_5.jpg' },
-        { id:16, nombre:'Mesa Tronco', categoria:'exterior', precio:22000, desc:'Mesa artesanal de tronco de Parota con juego de 6 sillas.', img:'/images/exterior_2.jpg' }
+        { id:2, nombre:'Comedor Jurídico', categoria:'comedor', precio:72000, desc:'Comedor Jurídico de Cedro con 14 sillas estilo Beatriz.', img:'images/comedor_2.jpg' },
+        { id:3, nombre:'Desayunador', categoria:'cocina', precio:9500, desc:'Mesa desayunador Roy barra alta de cocina antecomedor 100% Nogal.', img:'images/cocina_1.jpg' },
+        { id:4, nombre:'Sala Hueso', categoria:'sala', precio:12000, desc:'Sala Devayne con acabados en madera, barnizado en color hueso.', img:'images/sala_1.jpg' },
+        { id:5, nombre:'Mesedora Clásica', categoria:'exterior', precio:9550, desc:'Mecedora vintage de Roble solido Mission Arts.', img:'images/exterior_1.jpg' },
+        { id:6, nombre:'Sala Providencial', categoria:'sala', precio:100000, desc:'Sala con mesa de centro Piamonte tallado a mano en Cedro Rojo.', img:'images/sala_2.jpg' },
+        { id:7, nombre:'Sala Amapola', categoria:'sala', precio:20000, desc:'Sala Clásica de Caoba con respaldo abotonado.', img:'images/sala_3.jpg' },
+        { id:8, nombre:'Tocador', categoria:'dormitorio', precio:7400, desc:'Tocador de madera de Roble con espejo estilo Frances.', img:'images/dormitorio_1.jpg' },
+        { id:9, nombre:'Chaise Pino', categoria:'dormitorio', precio:7500, desc:'Chaise longue grande tela de terciopelo, con madera de Pino.', img:'images/dormitorio_2.jpg' },
+        { id:10, nombre:'Cabecera King', categoria:'dormitorio', precio:12000, desc:'Cabecera de Parota con barniz oscuro para cama King Zise.', img:'images/dormitorio_3.jpg' },
+        { id:11, nombre:'Mesa 6', categoria:'comedor', precio:40000, desc:'Mesa de Roble macizo para 6 personas, con braniz Caoba.', img:'images/comedor_3.jpg' },
+        { id:12, nombre:'Recibidor', categoria:'sala', precio:2500, desc:'Mesa recibidor estio House Clásica madera Caoba Oscuro.', img:'images/sala_4.jpg' },
+        { id:13, nombre:'Consoleta', categoria:'dormitorio', precio:3500, desc:'Cosoleta semicircular de Pino estilo Norcastle.', img:'images/dormitorio_4.jpg' },
+        { id:14, nombre:'Mesa Redonda', categoria:'comedor', precio:20000, desc:'Mesa redonda de Parota con 4 sillas ergonómicas curvas.', img:'images/comedor_4.jpg' },
+        { id:15, nombre:'Cabecera Matrimonial', categoria:'dormitorio', precio:8000, desc:'Cabecera matrimonial estilo Texas, elaborada 100% en Nogal.', img:'images/dormitorio_5.jpg' },
+        { id:16, nombre:'Mesa Tronco', categoria:'exterior', precio:22000, desc:'Mesa artesanal de tronco de Parota con juego de 6 sillas.', img:'images/exterior_2.jpg' }
     ];
 
     // Estado actual del filtro
