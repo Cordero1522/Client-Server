@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Mueblería Adly</title>
+    <link rel="icon" type="image/x-icon" href="/images/icono.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="main/style.css">
+</head>
+<body>
+
+<div class="container">
+    <!-- Navegación -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html" class="logo-link">
+                <img src="/images/logo.png" alt="Logo Mueblería Adly" class="logo-img">
+            </a>
+        </div>
+        <div class="nav-links">
+            <a href="index.html" class="active" data-section="inicio">Inicio</a>
+            <a href="about/about.html" data-section="nosotros">Sobre Nosotros</a>
+            <a href="contact/contacto.html" data-section="contacto">Contacto</a>
+            <a href="history/historia.html" data-section="contacto">Nuestra Historia</a>
+        </div>
+        <div class="cart-icon-wrapper" id="abrir-carrito-btn">
+            <i class="fas fa-shopping-cart"></i>
+            <span id="cart-count-badge">0</span>
+        </div>
+    </nav>
+
+    <!-- HERO / INICIO -->
+    <section id="inicio" class="hero">
+        <h2>Tu estilo en muebles</h2>
+        <p>La madera tallada, muestra la belleza del arte.</p>
+        <a href="#catalogo" class="btn-primary">Ver catálogo</a>
+    </section>
+
+    <!-- Catálogo -->
+    <div class="catalogo-titulo">
+        <h2 id="catalogo">Nuestro catálogo</h2>
+    </div>
+
+    <!-- Filtros de categoría -->
+    <div class="filtros-container">
+        <button class="filtro-btn active" data-categoria="todos">Todos</button>
+        <button class="filtro-btn" data-categoria="sala">Sala</button>
+        <button class="filtro-btn" data-categoria="comedor">Comedor</button>
+        <button class="filtro-btn" data-categoria="dormitorio">Dormitorio</button>
+        <button class="filtro-btn" data-categoria="cocina">Cocina</button>
+        <button class="filtro-btn" data-categoria="exterior">Exterior</button>
+    </div>
+
+    <div class="productos-grid" id="productos-container"></div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-logo">
+                <h3>Mueblería Adly</h3>
+                <p>Muebles con alma y tradición.<br>Diseño y calidad artesanal.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Explorar</h4>
+                <a href="#catalogo">Catálogo</a>
+                <a href="sobre-nosotros.html">Historia</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
+            <div class="footer-links">
+                <h4>Soporte</h4>
+                <a href="#">Envíos</a>
+                <a href="#">Garantía</a>
+                <a href="#">FAQs</a>
+            </div>
+            <div class="footer-social">
+                <h4>Síguenos</h4>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/mueblesadly?fbclid=IwY2xjawRN7p5leHRuA2FlbQIxMABicmlkETFpaDJUMTNYaFBZWlR4MU80c3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHj2-u_RUiz_5zE3PR931PGprRKSJhmm73Ctok3M6xkZ6ioRKqZBsKnYxOo9P_aem_ywFctSz3nhtVYXzoeAp8Xw"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100063499033078&locale=es_LA"><i class="fab fa-facebook"></i></a>
+                    <a href="https://wa.me/5219381975137" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a>
+                </div>
+                <br>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- CARRITO (OVERLAY) -->
+<div class="carrito-overlay" id="carritoOverlay">
+    <div class="carrito-panel" id="carritoPanel">
+        <div class="carrito-header">
+            <h2>Tu carrito</h2>
+            <button class="cerrar-carrito" id="cerrarCarritoBtn"><i class="fas fa-times"></i></button>
+        </div>
+
+        <div id="carrito-lista-items" class="carrito-items"></div>
+
+        <div class="carrito-total" id="carrito-total">$0</div>
+
+        <!-- Formulario de envío -->
+        <div class="form-envio">
+            <h3>Datos de envío</h3>
+            <form id="form-envio-cliente">
+                <div class="form-group">
+                    <label>Nombre completo *</label>
+                    <input type="text" name="Nombre" id="nombreCliente" required placeholder="Ej. María González">
+                </div>
+                <div class="form-group">
+                    <label>Teléfono *</label>
+                    <input type="tel" name="Telefono" id="telefonoCliente" required placeholder="+54 11 1234-5678">
+                </div>
+                <div class="form-group">
+                    <label>Correo electrónico *</label>
+                    <input type="email" name="Correo" id="correoCliente" required placeholder="cliente@email.com">
+                </div>
+                <div class="form-group">
+                    <label>Dirección completa *</label>
+                    <input type="text" name="Direccion" id="direccionCliente" required placeholder="Calle, número, ciudad">
+                </div>
+            </form>
+            <div class="carrito-botones">
+                <button class="vaciar-carrito-btn" id="vaciarCarritoBtn"><i class="fas fa-trash-alt"></i> Vaciar</button>
+                <button class="btn-finalizar" id="finalizarPedidoBtn">Enviar pedido</button>
+            </div>
+            <div id="mensaje-envio" class="mensaje-estado"></div>
+            <p class="seguridad-texto"><i class="fas fa-lock"></i> Tus datos se envían de forma segura.</p>
+        </div>
+    </div>
+</div>
+
+<!-- JavaScript -->
+<script src="main/script.js"></script>
+</body>
+</html>
