@@ -8,7 +8,7 @@
 
     // Catálogo de productos con categorías (HTML puro, no JS)
     const catalogo = [
-        { id:1, nombre:'Comedor Completo', categoria:'comedor', precio:18000, desc:'Comedor Talita, mesa de madera y 4 sillas color negro chocolate.', img:'../images/comedor_1.jpg' },
+        { id:1, nombre:'Comedor Completo', categoria:'comedor', precio:18000, desc:'Comedor Talita, mesa de madera y 4 sillas color negro chocolate.', img:'images/comedor_1.jpg' },
         { id:2, nombre:'Comedor Jurídico', categoria:'comedor', precio:72000, desc:'Comedor Jurídico de Cedro con 14 sillas estilo Beatriz.', img:'/images/comedor_2.jpg' },
         { id:3, nombre:'Desayunador', categoria:'cocina', precio:9500, desc:'Mesa desayunador Roy barra alta de cocina antecomedor 100% Nogal.', img:'/images/cocina_1.jpg' },
         { id:4, nombre:'Sala Hueso', categoria:'sala', precio:12000, desc:'Sala Devayne con acabados en madera, barnizado en color hueso.', img:'/images/sala_1.jpg' },

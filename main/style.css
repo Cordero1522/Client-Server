@@ -148,7 +148,7 @@ h1, h2, h3, .serif {
 
 /* Hero */
 .hero {
-    background: linear-gradient(rgba(40,30,25,0.4), rgba(40,30,25,0.6)), url('../images/banner.webp');
+    background: linear-gradient(rgba(40,30,25,0.4), rgba(40,30,25,0.6)), url('images/banner.webp');
     background-size: cover;
     background-position: center 70%;
     border-radius: var(--radius-xl);
